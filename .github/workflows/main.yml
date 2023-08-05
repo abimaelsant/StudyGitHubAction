@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
   steps:
       - name: Checkout
-          uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Setup AWS ECR Details
         uses: aws-actions/configure-aws-credentials@v1
         with:
