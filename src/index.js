@@ -34,7 +34,6 @@ http
   })
   .listen(PORT);
 
-  
 function connect() {
   const urlConnection = `mongodb://mongo:27017/db_study`;
     mongoose.connect(urlConnection)
