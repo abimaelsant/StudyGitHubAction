@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:4.4.15
+    ports:
+      - "27020:27017"
+    volumes:
+      - './data:/data/db'
+  application:
+    build: .
+    ports:
+      - "3006:3005"
+    depends_on:
+      - mongo
+  
